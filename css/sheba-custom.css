@@ -153,10 +153,11 @@ body {
 @media screen and (max-width: 479px) {
   .header {
     flex-direction: column;
-    gap: 10px;
+    gap: 9px;
   }
   .wrapper_hero .image {
-    height: 85%;
+    height: 80%;
+    bottom: -74px;
   }
   .section_about {
     height: auto;
