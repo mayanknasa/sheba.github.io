@@ -314,7 +314,7 @@
   position: relative;
 }
 
-.laika_back {
+.sheba_back {
   height: 750px;
   position: relative;
   bottom: -50px;
@@ -576,7 +576,7 @@
   border-color: #2ec4ff;
 }
 
-.laika_copyright, .email {
+.sheba_copyright, .email {
   color: #5b738e;
   
 }
@@ -812,10 +812,6 @@
   .block_ca {
     width: 100%;
   }
-
-  .buy {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 479px) {
@@ -887,7 +883,7 @@
     display: flex;
   }
 
-  .laika_copyright, .email {
+  .sheba_copyright, .email {
     font-size: 10px;
     line-height: 10px;
   }
