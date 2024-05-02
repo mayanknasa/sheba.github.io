@@ -1,91 +1,131 @@
 @font-face {
-  font-family: "Organic-Brand";
-  src: url("../fonts/Organic-Brand.ttf");
-}
-
-:root {
-  --blue-primary: #3b6df4;
-  --blue-primary-light: #74bdfd;
-  --blue-primary-dark: #033ac4;
-  --black: #000;
-  --white: #fff;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Organic-Brand";
-  font-weight: 100;
-}
-body{
+    font-family: "Organic-Brand";
+    src: url("../fonts/Organic-Brand.ttf");
+  }
+  
+  :root {
+    --blue-primary: #3b6df4;
+    --blue-primary-light: #74bdfd;
+    --blue-primary-dark: #033ac4;
+    --black: #000;
+    --white: #fff;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: "Organic-Brand";
+    font-weight: 100;
+  }
+  body{
+      background-color: var(--blue-primary-dark);
+  }
+  .wrapper_hero,.buy,.socials,.logo,.section_about,.block_separator_2, .section_tokenomics,.checker,.board_details,.block_ca {
     background-color: var(--blue-primary-dark);
-}
-.wrapper_hero,.buy,.socials,.logo,.section_about,.block_separator_2, .section_tokenomics,.checker,.board_details,.block_ca {
-  background-color: var(--blue-primary-dark);
-}
-
-.separator_hero,.floor,.block_board{
-    background-color: var(--blue-primary-light);
-}
-
-.block_separator_1,.floor_shadow,.block_board_in,.ca,.about_window{
-    background-color: var(--blue-primary);
-}
-
-.wrapper_hero .image{
-    bottom: -110px;
-    height: 100%;
-}
-
-.block_floor .floor{
-    height: 20px;
-}
-
-.block_about,.section_hero{
-    background-size: cover;
-    background-repeat:no-repeat;
-}
-
-.main-logo{
-    display: flex;
-    background-color: var(--blue-primary-dark);
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-}
-
-.main-logo:hover{
-    background-color: var(--blue-primary);
-}
-
-.main-logo img{
-    max-width: 40px;
-}
-
-.about_para .para{
-    text-transform: uppercase;
-}
-
-.checker{
-    border: 0;
-}
-
-@media screen and (max-width: 767px) {
-    .about_chara{
-        justify-content: center;
-    }
-    .block_about{
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width: 479px) {
-    .header {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .wrapper_hero .image{
-        height: 85%;
-    }
-}
+  }
+  
+  .separator_hero,.floor,.block_board{
+      background-color: var(--blue-primary-light);
+  }
+  
+  .block_separator_1,.floor_shadow,.block_board_in,.ca,.about_window{
+      background-color: var(--blue-primary);
+  }
+  
+  .wrapper_hero .image{
+      bottom: -110px;
+      height: 100%;
+  }
+  
+  .block_floor .floor{
+      height: 20px;
+  }
+  
+  .block_about,.section_hero{
+      background-size: cover;
+      background-repeat:no-repeat;
+  }
+  
+  .main-logo{
+      display: flex;
+      background-color: var(--blue-primary-dark);
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+  }
+  
+  .main-logo:hover{
+      background-color: var(--blue-primary);
+  }
+  
+  .main-logo img{
+      max-width: 40px;
+  }
+  
+  .about_para .para{
+      text-transform: uppercase;
+  }
+  
+  .checker{
+      border: 0;
+  }
+  
+  .section_about{
+      height: auto;
+  }
+  
+  .meet_sheba .block_about{
+      padding: 0 100px 0 0;
+  }
+  
+  .rotateImage-container {
+      perspective: 1000px; /* Add perspective to give a 3D effect */
+      width: 300px; /* Adjust according to your image size */
+      height: 300px;
+  }
+  
+  .rotateImage-container img {
+      width: 100%;
+      height: auto;
+      animation: rotateImage 3s infinite linear; /* Adjust timing as needed */
+      transform-style: preserve-3d; /* Ensures the image rotates in 3D space */
+  }
+  
+  @keyframes rotateImage {
+      from {
+          transform: rotateY(0deg);
+      }
+      to {
+          transform: rotateY(360deg);
+      }
+  }
+  
+  
+  @media screen and (max-width: 767px) {
+      .about_chara{
+          justify-content: center;
+      }
+      .block_about{
+          padding: 20px;
+      }
+  }
+  
+  @media screen and (max-width: 479px) {
+      .header {
+          flex-direction: column;
+          gap: 10px;
+      }
+      .wrapper_hero .image{
+          height: 85%;
+      }
+      .section_about{
+          height: auto;
+      }
+      img{
+          overflow: hidden;
+      }
+      .block_board{
+          width: auto;
+      }
+  }
