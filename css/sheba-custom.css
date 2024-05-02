@@ -65,16 +65,17 @@ body {
 
 .main-logo {
   display: flex;
-  background-color: var(--blue-primary-dark);
+  background-color: var(--white);
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 0px;
   border-radius: 10px;
   border: 2px solid var(--white);
+  color: var(--black);
 }
 
 .main-logo:hover {
-  background-color: var(--blue-primary);
+  background-color: var(--blue-primary-light);
 }
 
 .main-logo img {
