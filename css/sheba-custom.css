@@ -99,10 +99,12 @@ body {
     text-align: center;
 }
 
+.w-button{
+    letter-spacing: 1px;
+}
+
 .rotateImage-container {
   perspective: 1000px; /* Add perspective to give a 3D effect */
-  width: 300px; /* Adjust according to your image size */
-  height: 300px;
 }
 
 .rotateImage-container img {
