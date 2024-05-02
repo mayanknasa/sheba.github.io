@@ -72,6 +72,9 @@ body {
   border-radius: 10px;
   border: 2px solid var(--white);
   color: var(--black);
+  padding: 5px;
+  padding-right: 10px;
+  font-size: 18px;
 }
 
 .main-logo:hover {
