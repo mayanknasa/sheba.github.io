@@ -178,6 +178,9 @@ body {
 }
 @media screen and (max-width: 767px) {
   .wrapper_hero .image {
+    bottom: -74px;
+  }
+  .wrapper_hero .image {
     height: 80%;
   }
   .header {
