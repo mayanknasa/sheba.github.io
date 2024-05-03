@@ -29,13 +29,17 @@ body {
 .section_tokenomics,
 .checker,
 .board_details,
-.block_ca, .section_join, .socials_footer {
+.block_ca,
+.section_join,
+.socials_footer {
   background-color: var(--blue-primary-dark);
 }
 
 .separator_hero,
 .floor,
-.block_board,.tokenomics_separator,.footer_buttons {
+.block_board,
+.tokenomics_separator,
+.footer_buttons {
   background-color: var(--blue-primary-light);
 }
 
@@ -85,6 +89,10 @@ body {
   max-width: 50px;
 }
 
+.menu_right {
+  flex-wrap: wrap;
+}
+
 .about_para .para {
   text-transform: uppercase;
 }
@@ -101,44 +109,53 @@ body {
   padding: 0 100px 0 0;
 }
 
-.h1{
-    text-align: center;
+.h1 {
+  text-align: center;
 }
 
-.w-button{
-    letter-spacing: 1px;
+.w-button {
+  letter-spacing: 1px;
 }
-.socials_footer{
+
+.socials_footer {
   margin: 10px;
 }
-.sheba_copyright, .email{
+
+.sheba_copyright,
+.email {
   color: var(--blue-primary-light);
 }
 
-.section_join .img-container-1{
+.section_join .img-container-1 {
   margin-bottom: 30px;
   max-width: 300px;
 }
 
-.section_join .img-container-2{
+.section_join .img-container-2 {
   max-width: 50%;
 }
-.section_join .img-container-2 img{
-  max-height: 165px;
+
+.section_join .img-container-2 img {
+  max-height: 380px;
 }
-.footer_buttons{
- margin: 0;
- flex-flow: column;
+
+.footer_buttons {
+  margin: 0;
+  flex-flow: column;
 }
-.section_tokenomics,.section_join{
+
+.section_tokenomics,
+.section_join {
   padding-bottom: 20px;
 }
-.last-section{
+
+.last-section {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
 }
+
 .rotateImage-container {
   perspective: 1000px; /* Add perspective to give a 3D effect */
 }
@@ -149,18 +166,24 @@ body {
 }
 
 .by-animated-background {
-    background: linear-gradient(90deg, #f1c40f 0%, #f1c40f 50%, #3498db 50%, #3498db 100%);
-    background-size: 200% 100%;
-    animation: backgroundAnimation 10s linear infinite; /* Changed animation timing function to linear and added infinite */
+  background: linear-gradient(
+    90deg,
+    #f1c40f 0%,
+    #f1c40f 50%,
+    #3498db 50%,
+    #3498db 100%
+  );
+  background-size: 200% 100%;
+  animation: backgroundAnimation 10s linear infinite; /* Changed animation timing function to linear and added infinite */
 }
 
 @keyframes backgroundAnimation {
-    from {
-        background-position: 0% 50%;
-    }
-    to {
-        background-position: 100% 50%;
-    }
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
 }
 
 @keyframes rotateImage {
@@ -172,20 +195,22 @@ body {
   }
 }
 @media screen and (max-width: 990px) {
+  .header {
+    flex-direction: column;
+    gap: 9px;
+  }
+  .wrapper_hero .image {
+    height: 90%;
+  }
   .meet_sheba .block_about {
     padding: 20px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .wrapper_hero .image {
-    bottom: -74px;
-  }
-  .wrapper_hero .image {
     height: 80%;
-  }
-  .header {
-    flex-direction: column;
-    gap: 9px;
+    bottom: -110px;
   }
   .about_chara {
     justify-content: center;
@@ -193,30 +218,31 @@ body {
   .block_about {
     padding: 20px;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .last-section{
-    flex-direction: column;
-    gap: 30px;
-  }
-  .menu_right{
+  .menu_right {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .menu_right a{
+  .menu_right a {
     width: 50%;
     margin-bottom: 10px;
+    margin-left: 0;
   }
-  .w-button{
+  .menu_right a.buy {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .last-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .w-button {
     margin: 0;
   }
-  .footer_buttons .w-button{
+  .footer_buttons .w-button {
     margin: 10px;
-  }
-  .menu_right a.buy{
-    width: 100%;
   }
   .section_about {
     height: auto;
@@ -227,7 +253,7 @@ body {
   .block_board {
     width: auto;
   }
-  .section_join{
+  .section_join {
     padding-bottom: 30px;
   }
 }
